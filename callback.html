@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TikTok connected</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>TikTok authorization</h1>
+<p id="msg">Reading the response from TikTok…</p>
+<pre id="code" style="background:#1d1540;padding:16px;border-radius:8px;white-space:pre-wrap;word-break:break-all"></pre>
+<p>Copy this code and give it to the publishing agent to finish connecting your account.</p>
+<script>
+const p=new URLSearchParams(location.search);
+const c=p.get('code'),e=p.get('error');
+document.getElementById('msg').textContent=c?'Your account was authorized.':(e?'Authorization failed: '+e:'No authorization code found.');
+document.getElementById('code').textContent=c||'';
+</script>
+</main></body></html>
