@@ -1,0 +1,6 @@
+body{margin:0;font-family:system-ui,sans-serif;background:#0f0a23;color:#eee;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:40px 16px}
+a{color:#ffaa3c}h1{color:#fff}h2{color:#ffaa3c;margin-top:2em}
+nav{display:flex;gap:16px;margin-bottom:32px}
+img{width:120px;border-radius:24px}
+footer{margin-top:48px;font-size:.85em;color:#999}
